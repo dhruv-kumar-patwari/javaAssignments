@@ -11,17 +11,21 @@ public class AllLettersPresent {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String inputString = scanner.nextLine();
-        initHashMap();
         inputString = inputString.toLowerCase();
+        System.out.println(isAllLettersOfAlphabetPresent(inputString));
+    }
+
+    private static boolean isAllLettersOfAlphabetPresent(String inputString) {
+        initHashMap();
         char[] inputStringLetters = inputString.toCharArray();
         for(char c: inputStringLetters){ // o(n) here n is the size of the string.
             if(alphabet.contains(String.valueOf(c)))
                 letterFrequency.put(c, letterFrequency.get(c) + 1);
         }
         if(letterFrequency.containsValue(0))
-            System.out.println(false);
+            return (false);
         else
-            System.out.println(true);
+            return (true);
     }
 
     private static void initHashMap(){
