@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class HomeDirectoryCrawler {
     public static void main(String[] args) {
-        File directory = new File("/home/dhrkp/");
+        File directory = new File("/home/dhrkp/"); // Link to the directory to be read
         String[] filesInDir = directory.list();
         String regex;
         while (true){
@@ -16,7 +16,7 @@ public class HomeDirectoryCrawler {
                 break;
             else{
                 for (String file: filesInDir){
-                    if(file.matches(regex))
+                    if(file.matches(regex)) // If filename matches with the reqular expression, print the file name
                         System.out.println(file);
                 }
             }
