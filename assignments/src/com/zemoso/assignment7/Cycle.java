@@ -19,9 +19,6 @@ class Bicycle extends Cycle{
 }
 
 class Tricycle extends Cycle {
-    void balance(){
-        System.out.println("Balance in Tricycle");
-    }
 }
 
 class FactoryCycle {

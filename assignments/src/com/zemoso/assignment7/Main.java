@@ -24,18 +24,19 @@ public class Main {
         Cycle cycles[]=new Cycle[3];
         cycles[0]=new Unicycle();
         cycles[0].balance();
-        cycles[0]=new Cycle();
-        cycles[0].balance();
+        Unicycle uc = (Unicycle)cycles[0];
+        uc.balance();
 
         cycles[1]=new Bicycle();
         cycles[1].balance();
-        cycles[1]=new Cycle();
-        cycles[1].balance();
+        Bicycle bc = (Bicycle)cycles[1];
+        bc.balance();
 
         cycles[2]=new Tricycle();
         cycles[2].balance();
-        cycles[2]=new Cycle();
-        cycles[2].balance();
+        Tricycle tc = (Tricycle)cycles[2];
+        tc.balance();
+
     }
 
     private static void runPart3() {
