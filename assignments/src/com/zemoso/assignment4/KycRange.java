@@ -50,7 +50,6 @@ public class KycRange {
         long timeSinceRegistration = currentDate.getTime() - registrationDate.getTime();
         int daysSinceRegistration = (int) (timeSinceRegistration/ (1000 * 60 * 60 * 24));
 
-        System.out.println(registrationDate + "\t" + currentDate + "\t" + daysSinceRegistration);
         return daysSinceRegistration;
     }
 

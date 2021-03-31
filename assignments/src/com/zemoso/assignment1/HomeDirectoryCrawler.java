@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class HomeDirectoryCrawler {
     public static void main(String[] args) {
-        File directory = new File("/home/dhrkp/"); // Link to the directory to be read
+        File directory = new File(System.getProperty("user.home")); // Link to the directory to be read
         String[] filesInDir = directory.list();
         String regex;
         while (true){

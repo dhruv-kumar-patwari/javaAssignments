@@ -18,6 +18,7 @@ public class ConstructorOver {
 
     public static void main(String[] args) {
         ConstructorOver obj1=new ConstructorOver();
+
         ConstructorOver obj2[]=new ConstructorOver[2];
 
         obj2[0]=new ConstructorOver("Dhruv");

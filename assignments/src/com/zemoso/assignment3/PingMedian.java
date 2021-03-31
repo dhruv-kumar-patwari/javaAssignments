@@ -13,7 +13,7 @@ public class PingMedian {
     private static final List<Double> packetTimes = new ArrayList<>();
 
     public static void main(String[] args) {
-        runPingCommand("ping -c 4 google.com");
+        runPingCommand("ping -c 5 google.com");
         findTimeValues();
         findMedian();
     }
